@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>New Project</title>
+</head>
+    <body style= "color: white; background-color: #1d2630">
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="display-5 mb-5"><strong>Crud Application</strong></h1>
+            </div>
+            <div class="main row justify-content-center">
+                <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="firstName">Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="firstName">Gmail</label>
+                        <input class="form-control" id="email" type="text" placeholder="Enter Your Gmail">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="firstName">Phone Number</label>
+                        <input class="form-control" id="PhoneNumber" type="text" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="col-10 col-md-8">
+                        <input class="btn btn-success add-btn" type="submit" value="Submit">
+                    </div>
+                </form>
+                <div class="col-12 col-md-10 mt-5"></div>
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Gmail</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <tr>
+                            <td>Sami</td>
+                            <td>samikhan@gmail.com</td>
+                            <td>03489031734</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
